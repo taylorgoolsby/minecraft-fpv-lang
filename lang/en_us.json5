@@ -1,7 +1,82 @@
 {
-  // These are found in Options > Controls.
+  // These keybinding strings are found inside Options > Controls.
+  "key.fpvdrone.category": "Minecraft FPV", // The name of a keybinding category.
   "key.fpvdrone.arm": "Arm Drone", // The name of a keybinding
-  "key.fpvdrone.category": "Minecraft FPV" // The name of the keybinding category.
 
-  //
+  // The following fpvdrone.chat is for strings which appear in chat.
+  /*
+    Appears when a world loads if this is the first time the mod has been installed.
+  */
+  "fpvdrone.chat.firsttime": "First time using Minecraft FPV? Instructions: ",
+  /*
+    Appears when a world loads if this is NOT the first time the mod has been installed.
+  */
+  "fpvdrone.chat.join": "Fly with us at ",
+
+  // The following fpvdrone.settings appear in the settings GUI. Options > Controls > FPV
+  "fpvdrone.settings.fpv": "FPV", // The FPV setttings button.
+  "fpvdrone.settings.fpvsettings": "FPV Settings", // The title of most settings screens.
+  "fpvdrone.settings.server": "Server", // The "Server" button.
+  "fpvdrone.settings.wiki": "Wiki", // The "Wiki" button.
+  "fpvdrone.settings.controller": "Controller", // Word.
+  "fpvdrone.settings.nocontroller": "No Controller Assigned", // Phrase.
+  "fpvdrone.settings.model": "Model", // Title.
+  "fpvdrone.settings.channel": "Channel Mapping", // Button and Screen Title.
+  "fpvdrone.settings.rates": "Rates", // Button and Screen Title.
+  "fpvdrone.settings.build": "Drone Build", // Button and Screen Title.
+  "fpvdrone.settings.other": "Other Settings", // Button and Screen Title.
+  "fpvdrone.settings.choose": "Choose", // Button. Must be short.
+  "fpvdrone.settings.config": "Config", // Button. Must be short.
+  "fpvdrone.settings.select": "Select", // Button. Must be short.
+  "fpvdrone.settings.delete": "Delete", // Button. Must be short.
+  "fpvdrone.settings.reset.xbox": "XBOX Reset", // Button.
+  "fpvdrone.settings.reset.radio": "Radio Reset", // Button.
+
+  "fpvdrone.device.choose": "Choose a Device", // Title of screen when choosing a controller.
+
+  "fpvdrone.model.active": "Active Model", // Title of screen when choosing a model.
+  "fpvdrone.model.choose": "Choose a Model", // Label.
+  "fpvdrone.model.new": "New Preset", // Button used for creating a new model.
+
+  /*
+    Name of category containing axes.
+    An axis is a channel which can have a range of values.
+  */
+  "fpvdrone.channel.category.axis": "Axis Mapping",
+  /*
+    Name of category containing switches.
+    A switch is a channel which can only have 2 possible values: on or off.
+  */
+  "fpvdrone.channel.category.switch": "Switch Mapping",
+  "fpvdrone.channel.notinverted": "Normal", // When an axis is not inverted. Must be short.
+  "fpvdrone.channel.inverted": "Flipped", // When an axis is inverted. Must be short.
+  "fpvdrone.channel.throttle": "Throttle", // Name of axis.
+  "fpvdrone.channel.roll": "Roll", // Name of axis.
+  "fpvdrone.channel.pitch": "Pitch", // Name of axis.
+  "fpvdrone.channel.yaw": "Yaw", // Name of axis.
+  "fpvdrone.channel.arm": "Arm", // Name of switch.
+  "fpvdrone.channel.anglepot": "Custom Camera Angle", // Name of axis.
+  "fpvdrone.channel.angleswitch": "Activate Custom Camera Angle", // Name of switch.
+  "fpvdrone.channel.rightclick": "Right Click Using Controller", // Name of switch.
+
+  "fpvdrone.rates.yaw.rate": "Yaw Rate", // Label.
+  "fpvdrone.rates.yaw.super": "Yaw Super", // Label.
+  "fpvdrone.rates.yaw.expo": "Yaw Expo", // Label.
+  "fpvdrone.rates.pitch.rate": "Pitch Rate", // Label.
+  "fpvdrone.rates.pitch.super": "Pitch Super", // Label.
+  "fpvdrone.rates.pitch.expo": "Pitch Expo", // Label.
+  "fpvdrone.rates.roll.rate": "Roll Rate", // Label.
+  "fpvdrone.rates.roll.super": "Roll Super", // Label.
+  "fpvdrone.rates.roll.expo": "Roll Expo", // Label.
+
+  "fpvdrone.build.error.default": "Default models cannot be configured.", // Phrase.
+  "fpvdrone.build.mass": "Total Mass (Grams)", // Label.
+  "fpvdrone.build.kv": "Motor Kv (RPM)", // Label.
+  "fpvdrone.build.cells": "Battery Cells (1 - 12)", // Label.
+  "fpvdrone.build.diameter": "Prop Diameter (Inches)", // Label.
+  "fpvdrone.build.pitch": "Prop Pitch (Inches)", // Label.
+  "fpvdrone.build.blades": "Blades per Prop (2 - 4)", // Label.
+
+  "fpvdrone.other.crosshair": "Show Crosshairs While Armed", // Label.
+  "fpvdrone.other.angle": "Default Angle" // Label.
 }
