@@ -56,3 +56,24 @@ test('en_us immutability', async () => {
      throw new Error('en_us.json5 cannot be editted.')
   }
 })
+
+test('complete translation', async () => {
+  const rawMaster = fs.readFileSync(path.resolve(__dirname, './lang/en_us.json5'), {encoding: 'utf-8'})
+  const master = JSON5.parse(rawMaster)
+
+  for (const filename of filenames) {
+    if (filename === 'zz_xx.json5') continue
+    if (filename === 'en_us.json5') continue
+
+    const raw = fs.readFileSync(path.resolve(__dirname, './lang', filename), {encoding: 'utf-8'})
+    const data = JSON5.parse(raw)
+
+    // Number of keys in your translation should equal number of keys in en_us.json5
+    expect(Object.keys(data)).toHaveLength(Object.keys(master).length)
+
+    for (const key of Object.keys(master)) {
+      expect(data).toHaveProperty([key])
+      expect(typeof data[key]).toEqual('string')
+    }
+  }
+})

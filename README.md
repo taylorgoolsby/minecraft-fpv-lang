@@ -9,6 +9,7 @@ If you would like to add a translation to the mod, you can do so by contributing
 2. Ensure that your `.json` file is `UTF-8` encoded.
 3. Your translation file must be valid JSON syntax.
 4. Do not edit `en_us.json5`.
+5. Every key in `en_us.json5` must exist in your translation file.
 
 ### Acceptance
 1. Automated testing will ensure the requirements are met. 
