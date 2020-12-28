@@ -1,0 +1,7 @@
+{
+  // These are found in Options > Controls.
+  "key.fpvdrone.arm": "Arm Drone", // The name of a keybinding
+  "key.fpvdrone.category": "Minecraft FPV" // The name of the keybinding category.
+
+  //
+}
