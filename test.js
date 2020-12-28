@@ -4,6 +4,7 @@ const path = require('path')
 const localeCode = require('locale-code')
 const isutf8 = require('isutf8')
 const JSON5 = require('json5')
+const sfg = require('staged-git-files')
 
 const filenames = fs.readdirSync(path.resolve(__dirname, './lang'))
 
@@ -46,5 +47,12 @@ test('json5 syntax', () => {
     } catch (err) {
       throw new Error(filename + ': Your file is not valid JSON syntax. Reason: ' + err.message)
     }
+  }
+})
+
+test('en_us immutability', async () => {
+  const stage = await sfg()
+  if (stage.find(entry => entry.filename === 'lang/en_us.json5')) {
+     throw new Error('en_us.json5 cannot be editted.')
   }
 })
