@@ -35,7 +35,12 @@ test('file encoding', () => {
 
 test('json5 syntax', () => {
   for (const filename of filenames) {
+    if (filename === 'zz_xx.json5') continue
     const data = fs.readFileSync(path.resolve(__dirname, './lang', filename), {encoding: 'utf-8'})
-    JSON5.parse(data)
+    try {
+      JSON5.parse(data)
+    } catch (err) {
+      throw new Error(filename + ': ' + err.message)
+    }
   }
 })
